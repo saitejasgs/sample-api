@@ -23,12 +23,12 @@ import org.springframework.web.bind.annotation.RestController;
 		return String.format("Hello new new world!!");
 	}
  
- @GetMapping("/say")
+ @GetMapping("/get")
  public String hi(@RequestParam(value = "name", defaultValue = "Sai") String name) {
 		return String.format("Hi %s", name);
 	}
  
- @RequestMapping(value = "/es", method = RequestMethod.GET)
+ @RequestMapping(value = "/request", method = RequestMethod.GET)
  public String hehe(@RequestParam(value = "name", defaultValue = "Sai") String name) {
 		return String.format("Hi %s", name);
 	}
