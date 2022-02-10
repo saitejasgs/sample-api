@@ -34,8 +34,8 @@ import org.springframework.web.bind.annotation.RestController;
 		return String.format("Hi %s", name);
 	}
  
- @RequestMapping(value = "/add", method = RequestMethod.GET)
- public String addition(@RequestParam int a, @RequestParam int b){
+ @RequestMapping(value = "/calculate", method = RequestMethod.GET)
+ public String calculate(@RequestParam int a, @RequestParam int b){
 		return String.format("SUM = %d, DIFFERENCE = %d, PRODUCT = %d, QUOTIENT = %d", a + b, a - b, a * b, a / b);
 	}
  
